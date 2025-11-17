@@ -1,8 +1,12 @@
 # Retail Management System
 
-![Retail Management System Logo](images/logo.png)
-
 Welcome to the **Retail Management System**, a comprehensive desktop application designed to streamline your retail operations. Built with Python and PyQt5, this system integrates stock management, point-of-sale (POS) functionalities, sales history tracking, and insightful analytics to empower your business with efficient and data-driven decision-making.
+
+<br>
+<div align="center">
+  <img src="logo.png" width="100">
+</div>
+
 
 ## Table of Contents
 
@@ -16,17 +20,17 @@ Welcome to the **Retail Management System**, a comprehensive desktop application
   - [Cash Desk (POS)](#cash-desk-pos)
   - [Sales History](#sales-history)
   - [Analytics Dashboard](#analytics-dashboard)
-- [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ## Features
 
 - **Stock Management:**
   - Add, edit, and delete articles/items with details such as name, price, stock quantity, and photo.
+    
   - Upload and manage product images for visual reference.
+    
   - Export articles data to CSV for external use or backup.
 
 - **Cash Desk (POS):**
@@ -93,8 +97,8 @@ Follow these instructions to set up and run the Retail Management System on your
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/retail-management-system.git
-   cd retail-management-system
+   git clone https://github.com/swissmarley/cashier.git
+   cd cashier
    ```
 
 2.	**Create a Virtual Environment** (Optional but Recommended)
@@ -121,9 +125,9 @@ Follow these instructions to set up and run the Retail Management System on your
 
 ## Usage
 
-Launch the application by running the main.py script:
+Launch the application by running the app.py script:
 ```bash
-python main.py
+python app.py
 ```
 
 The application window features two main tabs:
@@ -133,145 +137,112 @@ The application window features two main tabs:
 ### Stock Management
 
 Manage your inventory seamlessly.
-	•	Add Article:
-	•	Fill in the article’s name, price, and stock quantity.
-	•	Upload a photo for visual reference.
-	•	Click “Add Article” to save.
-	•	Edit Article:
-	•	Select an article from the table.
-	•	Modify the desired fields.
-	•	Click “Edit Article” to update.
-	•	Delete Article:
-	•	Select an article from the table.
-	•	Click “Delete Article” and confirm the action.
-	•	Export Articles:
-	•	Click “Export Articles as CSV” to save the current inventory data.
+
+	Add Article:
+		•	Fill in the article’s name, price, and stock quantity.
+		•	Upload a photo for visual reference.
+		•	Click “Add Article” to save.
+	
+	Edit Article:
+		•	Select an article from the table.
+		•	Modify the desired fields.
+		•	Click “Edit Article” to update.
+	
+	Delete Article:
+		•	Select an article from the table.
+		•	Click “Delete Article” and confirm the action.
+	
+	Export Articles:
+		•	Click “Export Articles as CSV” to save the current inventory data.
 
 ### Cash Desk (POS)
 
 Process sales efficiently with the integrated POS system.
-	•	Search Articles:
-	•	Use the search bar to find specific articles by name.
-	•	Add to Cart:
-	•	Select an article from the list.
-	•	Specify the quantity and click “Add to Cart”.
-	•	Manage Cart:
-	•	View added items in the cart.
-	•	Adjust quantities if necessary.
-	•	Apply Discounts:
-	•	Enter a discount percentage to apply to the total sale.
-	•	Select Payment Type:
-	•	Choose between “Cash” or “Card” as the payment method.
-	•	Process Payment:
-	•	Click “Process Payment” to finalize the sale.
-	•	A receipt window will appear displaying all sale details.
-	•	Choose to print or save the receipt.
+
+	Search Articles:
+		•	Use the search bar to find specific articles by name.
+	
+	Add to Cart:
+		•	Select an article from the list.
+		•	Specify the quantity and click “Add to Cart”.
+	
+	Manage Cart:
+		•	View added items in the cart.
+		•	Adjust quantities if necessary.
+	
+	Apply Discounts:
+		•	Enter a discount percentage to apply to the total sale.
+		
+	Select Payment Type:
+		•	Choose between “Cash” or “Card” as the payment method.
+		
+	Process Payment:
+		•	Click “Process Payment” to finalize the sale.
+		•	A receipt window will appear displaying all sale details.
+		•	Choose to print or save the receipt.
 
 ### Sales History
 
 Review all past sales transactions.
-	•	View Sales:
-	•	Browse through the sales history table with detailed information.
-	•	Export History:
-	•	Click “Export History as CSV” to download the sales data.
+
+	View Sales:
+		•	Browse through the sales history table with detailed information.
+	
+	Export History:
+		•	Click “Export History as CSV” to download the sales data.
 
 ### Analytics Dashboard
 
 Gain insights into your sales performance.
-	•	Total Sales Over Time:
-	•	Visualize revenue trends across different dates.
-	•	Top Selling Items:
-	•	Identify your best-performing products.
-	•	Discount Distribution:
-	•	Analyze how discounts affect your sales.
-	•	Export Analytics:
-	•	Click “Export Analytics as PDF” to save the graphical reports.
 
+	Total Sales Over Time:
+		•	Visualize revenue trends across different dates.
+	
+	Top Selling Items:
+		•	Identify your best-performing products.
+	
+	Discount Distribution:
+		•	Analyze how discounts affect your sales.
+	
+	Export Analytics:
+		•	Click “Export Analytics as PDF” to save the graphical reports.
 
-## Project Structure
-
-```bash
-retail-management-system/
-│
-├── images/
-│   ├── logo.png
-│   └── (other product images)
-│
-├── receipts/
-│   └── (generated receipt files)
-│
-├── screenshots/
-│   ├── stock_management.png
-│   ├── cash_desk.png
-│   ├── sales_history.png
-│   ├── analytics_dashboard.png
-│   └── receipt_window.png
-│
-├── stock_management.db
-│
-├── main.py
-│
-├── requirements.txt
-│
-└── README.md
-```
-•	images/: Contains the company logo and product photos.
-
-•	receipts/: Stores generated receipt files in HTML format.
-
-•	screenshots/: Holds images used in the README for visual reference.
-
-•	stock_management.db: SQLite database file storing all application data.
-
-•	main.py: The main application script containing all functionalities.
-
-•	requirements.txt: Lists all Python dependencies.
-
-•	README.md: This documentation file.
 
 ## Technologies Used
-•	Python 3.6+
-
-•	PyQt5: For building the graphical user interface.
-
-•	SQLite: Lightweight database for data storage.
-
-•	Pandas: Data manipulation and analysis.
-
-•	Matplotlib: Creating visual analytics and charts.
+	•	Python 3.6+
+	
+	•	PyQt5: For building the graphical user interface.
+	
+	•	SQLite: Lightweight database for data storage.
+	
+	•	Pandas: Data manipulation and analysis.
+	
+	•	Matplotlib: Creating visual analytics and charts.
 
 ## Contributing
 
 Contributions are welcome! Follow these steps to contribute:
 
-1.	Fork the Repository
-
-2.	Create a New Branch
-    ```bash
-    git checkout -b feature/YourFeatureName
-    ```
-3.	Make Changes
-4.	Commit Your Changes
-    ```bash
-    git commit -m "Add your message here"
-    ``` 
-
-5.	Push to the Branch
-    ```bash
-    git push origin feature/YourFeatureName
-    ```
-
-6.	Open a Pull Request
+	1.	Fork the Repository
+	
+	2.	Create a New Branch
+	    ```bash
+	    git checkout -b feature/YourFeatureName
+	    ```
+	3.	Make Changes
+	4.	Commit Your Changes
+	    ```bash
+	    git commit -m "Add your message here"
+	    ``` 
+	
+	5.	Push to the Branch
+	    ```bash
+	    git push origin feature/YourFeatureName
+	    ```
+	
+	6.	Open a Pull Request
 
 
 ## License
 
 This project is licensed under the MIT License.
-
-## Contact
-
-For any inquiries or support, please contact:
-	•	Your Name
-	•	Email: your.email@example.com
-	•	LinkedIn: Your LinkedIn Profile
-	•	GitHub: yourusername
